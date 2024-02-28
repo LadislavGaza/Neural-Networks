@@ -1,0 +1,27 @@
+Zadanie 3
+
+# Changelog 1
+
+- uprava diskriminatora (enforcnutie vah, normalizacia)
+
+- finetuning vah  pre diskriminator a generator - mozno hrat sa na grayscale datach pre jednoduchost
+
+- uprava vstupnych dat - gan sa focusuje na najsvetlejsie body tvare, uprava kontrastu (vytahovanie najdolezitejsich crtov)
+
+- pooling pre okraje obrazka (rozsirit obrazok nasilu), stochastic pooling?
+
+- pohrat sa s blokmi - resnet ako inspiracia?
+
+
+
+
+# Changelog 2
+
+ina metoda na pooling pri prepaloch (stochastic, s3)
+odstranit background (r cnn) a čistenie dat
+v batch normalizacii v diskriminatore nastavit momentum na nizsie ak by sme to tam dali
+kernel_initializer=tf.random_normal_initializer(0.,0.002))(x) + zmena learning rate alebo He
+wandb posielat obrazky
+diskriminator inicializacia vah
+
+- pouzit model na iny dataset tvari
